@@ -4,7 +4,8 @@
   "description": "Aulas de Query Builder",
   "main": "index.js",
   "scripts": {
-    "dev": "tsx watch src/server.ts"
+    "dev": "tsx watch src/server.ts",
+    "knex": "node --import tsx ./node_modules/knex/bin/cli.js"
   },
   "author": "Israel Teixeira",
   "license": "ISC",
@@ -14,6 +15,7 @@
     "typescript": "^5.5.4"
   },
   "dependencies": {
+    "better-sqlite3": "^12.2.0",
     "express": "^4.19.2",
     "knex": "^3.1.0",
     "sqlite3": "^5.1.7",
